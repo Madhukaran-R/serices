@@ -1,0 +1,13 @@
+version: '1.0'
+
+services:
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - /home/madhukaran/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
